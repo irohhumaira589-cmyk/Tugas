@@ -1,0 +1,200 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4c4, #e6e6fa);
+    color: #444;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background: linear-gradient(135deg, #ff69b4, #a64dff, #ff9f43);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.jumbotron h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 3px 5px #663399;
+}
+
+.jumbotron h4 {
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #8e44ad;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    align-items: flex-start;
+}
+
+#content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* CARD MAKANAN */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.2);
+    border-top: 6px solid #ff69b4;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+}
+
+/* JUDUL MAKANAN */
+.card h2 {
+    color: #a64dff;
+    font-size: 27px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+/* GAMBAR MAKANAN */
+.featured-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 4px solid #ffd166;
+}
+
+/* PARAGRAF */
+.card p {
+    color: #555;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* ABOUT ME */
+.profile {
+    text-align: center;
+    min-width: 200px;
+}
+
+.profile h2 {
+    color: #ff69b4;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff69b4;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #8e44ad, #ff69b4);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.footer-content p {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #ffe066;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    .jumbotron h1 {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .profile {
+        width: 100%;
+    }
+}
